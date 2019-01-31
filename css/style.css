@@ -1,0 +1,270 @@
+﻿/* FICHIER STYLE.CSS PAR meissonnier sandrine
+/* Définition d'une nouvelle police nommée game_of_thronesregular */
+@font-face {
+    font-family: 'game_of_thronesregular';
+    src: url('../font/game_of_thrones-webfont.eot');
+    src: url('../font/game_of_thrones-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/game_of_thrones-webfont.woff2') format('woff2'),
+         url('../font/game_of_thrones-webfont.woff') format('woff'),
+         url('../font/game_of_thrones-webfont.ttf') format('truetype'),
+         url('../font/game_of_thrones-webfont.svg#game_of_thronesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* BALISES PRINCIPALES */
+*{
+	font-family: 'Lato', sans-serif;
+}
+
+html, body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	/*propriété pour l'image de fond*/
+	background-image: url('../images/bg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	/*on peut faire:  	background: url('../images/bg.jpg') no repeat fixed;*/
+	background-size: cover;
+}
+body{
+	background-image: url(../images/texture_bg.png);
+	background-repeat: repeat;
+}
+.gotfont,
+aside nav a strong,
+blockquote,
+article#westeros h3,
+article#westeros h4 {
+	font-family: 'game_of_thronesregular', cursive;
+	font-weight: normal;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+h2.gotfont{
+	line-height: 40px;
+	text-align: left;
+}
+aside h2.gotfont{
+	text-align: center;
+}
+article#westeros h3, 
+article#westeros h4{
+	text-align: left;
+	color: #ffffff;
+	font-size: 16px;
+	height: 37px;
+	line-height: 35px;
+	background-color: #000000;
+	padding-left: 20px;
+}
+blockquote{
+	font-style: normal;
+	font-size: 11px;
+	color: #6a6a6a
+}
+aside nav a strong{
+	font-size: 12px;
+}
+/*layout*/
+header{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 200px;
+	margin-bottom: 10px;
+	background-color: #000;
+	text-align: center;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+header img{
+	position: relative;
+	top: 10px;
+	width: 300px;
+	height: auto;
+}
+main{
+	width: 960px;
+	margin: 0 auto;
+	background-color: rgba(255,255,255,0.65);
+	padding: 10px;
+}
+article{
+	width: 576px;
+	float: right;
+	background-color: white;
+	padding: 10px;
+	margin-bottom: 20px;
+	/*Style partager par les maisons*/
+	background-repeat: no-repeat;
+	background-position: top left;
+	min-height: 350px;
+	padding-left: 94px;
+}
+/*style des maisons*/
+article#stark{background-image: url('../images/div_stark.jpg');}
+article#lannister{background-image: url('../images/div_lannister.jpg');}
+article#baratheon{background-image: url('../images/div_baratheon.jpg');}
+article#tyrell{background-image: url('../images/div_tyrell.jpg');}
+article#martell{background-image: url('../images/div_martell.jpg');}
+article#tully{background-image: url('../images/div_tully.jpg');}
+article#arryn{background-image: url('../images/div_arryn.jpg');}
+article#greyjoy{background-image: url('../images/div_greyjoy.jpg');}
+article#targaryen{background-image: url('../images/div_targaryen.jpg');}
+/*aside*/
+aside#menumaisons{
+	width: 260px;
+	float: left;
+	position: relative;
+	left: 0;
+	top: 0;
+	background-color: black;
+}
+/*titrage*/
+h1.gotfont{
+	font-size: 18px;
+	background-color: black;
+	padding-top: 15px;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #ffffff;
+}
+article h2,
+aside h2{
+	text-align: center;
+	color: #ffffff;
+	font-size: 14px;
+	height: 35px;
+	line-height: 35px;
+	background-color: #992E37;
+}
+article h2{
+	background-color: #000000;
+}
+/*menu et lien*/
+aside ul{
+	list-style-type: kannada;
+	color: #992E37;
+	padding-left: 35px;
+}
+aside li{
+	margin-bottom: 10px;
+	margin-top: 5px;
+	text-align: left;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+aside nav a:hover{
+	background-color: #992E37;
+}
+aside nav a h2{
+	background-color: #992E37;
+	color: #ffffff;
+	/*animation*/
+	transition: all 0.5s linear;
+}
+aside nav a:hover h2{
+	background color: #dcdcdc;
+	color: #992E37;
+}
+aside a{
+	color: #DCDCDC;
+	font-size: 16px;
+	padding: 5px;
+	background-color: black;
+	display: block;
+}
+a.retour_menu{
+	display: block;
+	text-align: right;
+	margin-top: 15px;
+	color: #331014;
+}
+a.retour_menu:hover{
+	text-decoration: underline;
+	color: #992E37;
+}
+/*les maisons*/
+img.icone{
+	float: left;
+	margin-right: 10px;
+	border: 1px solid silver;
+}
+h2{margin:0;}
+p.devise {
+	display: inline;	
+}
+article strong{
+	font-size: 14px;
+}
+img.blason{
+	float: right;
+	margin-top: 15px;
+}
+blockquote{
+	font-weight: normal;
+	font-style: italic;
+	font-size: 16px;
+	display: inline;
+	background-color: rgba(192,192,192,0.33);
+	padding: 5px;
+	color: #5A5A5A;
+	margin: 0;
+}
+/*footer*/
+footer{
+	width: 100%;
+	height: auto;
+	min-height: 205px;
+	background-image: url('../images/bandeau_footer.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+footer h4{
+	margin-top: 0;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: normal;
+}
+footer a{
+	color: #ffffff;
+}
+/*clear*/
+div.cb{
+	clear: both;
+}
+/*style de la page westeros*/
+article#westeros{
+	width: 660px;
+	padding: 10px;
+}
+article#westeros a.zoombox{
+	display: inline-block;
+	width: 328px;
+	height: auto;
+	max-height: 340px;
+	overflow: hidden;
+}
+article#westeros img {
+	width: 100%;
+	height: auto;
+}
+article#westeros h4{
+	font-size: 14px;
+}
+article#westeros p{
+	text-align: justify;
+}
